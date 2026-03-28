@@ -11,6 +11,8 @@ npm run dev
 
 ## 上传到 GitHub
 
+仓库：**[Heziru/syphu-china-igem](https://github.com/Heziru/syphu-china-igem)**
+
 若本目录尚未初始化 Git：
 
 ```bash
@@ -19,11 +21,17 @@ git add .
 git commit -m "Initial commit: SYPHU-China iGEM site"
 ```
 
-在 GitHub 新建空仓库（不要勾选自动添加 README），然后：
+关联远程并推送（首次）：
 
 ```bash
-git remote add origin https://github.com/你的用户名/仓库名.git
+git remote add origin https://github.com/Heziru/syphu-china-igem.git
 git branch -M main
+git push -u origin main
+```
+
+若已添加过 `origin`，只需：
+
+```bash
 git push -u origin main
 ```
 
@@ -34,10 +42,11 @@ git push -u origin main
 3. **Build and deployment** 里，**Source** 选 **GitHub Actions**（不要选 Deploy from a branch）。
 4. 在 **Actions** 里等待 **Deploy to GitHub Pages**  workflow 跑绿。
 
-部署完成后，地址一般为：
+部署完成后，本仓库（项目站）线上地址一般为：
 
-- **普通仓库**（例如仓库名 `syphu-china-igem`）：`https://你的用户名.github.io/syphu-china-igem/`
-- **用户站点仓库**（仓库名恰好为 `你的用户名.github.io`）：`https://你的用户名.github.io/`
+**https://heziru.github.io/syphu-china-igem/**
+
+（若使用用户站点仓库 `xxx.github.io`，则根域为 `https://heziru.github.io/`。）
 
 路由已使用 `import.meta.env.BASE_URL`，会与上述路径一致。
 
