@@ -1,0 +1,66 @@
+# 推送到 main 后自动构建并部署到 GitHub Pages
+# 首次使用：仓库 Settings → Pages → Build and deployment → Source 选 “GitHub Actions”
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Set base path for GitHub Pages
+        id: base
+        shell: bash
+        run: |
+          REPO="${{ github.event.repository.name }}"
+          if [[ "$REPO" == *.github.io ]]; then
+            echo "path=/" >> "$GITHUB_OUTPUT"
+            echo "Using user site base: /"
+          else
+            echo "path=/$REPO/" >> "$GITHUB_OUTPUT"
+            echo "Using project site base: /$REPO/"
+          fi
+
+      - name: Build
+        run: npm run build
+        env:
+          VITE_BASE: ${{ steps.base.outputs.path }}
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
