@@ -71,3 +71,17 @@ VITE_WEB3FORMS_ACCESS_KEY=你的密钥
 ```
 
 `.env` 已在 `.gitignore` 中。
+
+## 多语言机翻（可选，本地 Python）
+
+站点文案以 `src/locales/zh-CN.json` 为主。可用开源库 **[translators](https://github.com/UlionTse/translators)**（PyPI：`translators`）在本地调用 Bing / Google 等**免费网页翻译接口**，批量补全 `en`、`fr`、`zh-TW`、`zh-HK` 中与简体相同或未译的条目（**不**打进前端包，无需 API Key）。
+
+```bash
+pip install -r requirements-i18n.txt
+# 先试跑 2 条、不写文件
+python scripts/translate_locales.py --target en --mode same-as-zh --dry-run --max-keys 2
+# 正式写入（默认 same-as-zh，约 0.45s/条，防限流）
+python scripts/translate_locales.py --target fr zh-TW --sleep 0.5
+```
+
+也可用 `npm run i18n:translate`（需本机已安装 Python 且可执行 `python`）。机翻仅供参考，发布前请人工校对；请遵守各翻译服务的使用条款，避免短时间大量请求。

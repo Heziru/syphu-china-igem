@@ -49,7 +49,7 @@ async function submitContact() {
   submitting.value = true
   try {
     const orgLine = contactOrg.value.trim()
-      ? `\n单位/团队：${contactOrg.value.trim()}`
+      ? `\n${t('form.orgLinePrefix')}${contactOrg.value.trim()}`
       : ''
     const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',

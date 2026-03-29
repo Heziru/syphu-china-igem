@@ -51,10 +51,10 @@
         "diseaseSubtitle": "Chemotaxis to TME · ADC and lactate sensing",
         "title": "SYPHU-China 2023 Project",
         "description": "The 2023 project focused on HER2-positive solid tumours, combining motility circuits with ADC-style delivery and synthetic parts such as eTlpC and strong promoters.",
-        "imgAlt0": "HER2 主题动画",
-        "imgAlt1": "模型",
-        "imgAlt2": "项目描述配图",
-        "cap0": "首页 HER2 视觉",
+        "imgAlt0": "HER2 theme animation",
+        "imgAlt1": "Model",
+        "imgAlt2": "Project description figure",
+        "cap0": "Wiki home · HER2 visual",
         "cap1": "model",
         "cap2": "description"
       },
@@ -63,9 +63,9 @@
         "diseaseSubtitle": "L. reuteri skin targeting · dynamic AMP release",
         "title": "SYPHU-China 2024 Project",
         "description": "Engineered Lactobacillus reuteri DSM17938 delivers a long-acting skin-microenvironment therapy with inducible antimicrobial peptides, aiming to reduce relapse versus conventional antifungal approaches.",
-        "imgAlt0": "2024 湿实验",
-        "imgAlt1": "实验结果",
-        "imgAlt2": "实验室与安全",
+        "imgAlt0": "2024 wet lab",
+        "imgAlt1": "Experimental results",
+        "imgAlt2": "Lab and safety",
         "cap0": "experiments",
         "cap1": "results",
         "cap2": "safety / lab"
@@ -75,12 +75,12 @@
         "diseaseSubtitle": "E. coli Nissle 1917 targets TME · ATRA and resistance reversal",
         "title": "SYPHU-China 2025 Project",
         "description": "Using engineered E. coli Nissle 1917, the team enables chemotaxis toward lactate-rich tumour microenvironments and in situ synthesis of all‑trans retinoic acid, with modelling and experiments supporting improved survival endpoints in advanced liver cancer.",
-        "imgAlt0": "2025 项目主页示意",
-        "imgAlt1": "细胞与药学主题",
-        "imgAlt2": "2025 项目配图",
-        "cap0": "Wiki 首页",
-        "cap1": "首页视觉",
-        "cap2": "项目展示"
+        "imgAlt0": "2025 project home",
+        "imgAlt1": "Cells and pharmacy theme",
+        "imgAlt2": "2025 project figure",
+        "cap0": "Wiki home",
+        "cap1": "Hero visual",
+        "cap2": "Project showcase"
       }
     }
   },
@@ -92,10 +92,10 @@
     "rosterIntroBefore": "Compiled from",
     "rosterIntroAfter": "; bios are shortened for readability. Full English statements are on the Wiki.",
     "workTitle": "Our work",
-    "workResearch": "我们的研究",
-    "workResearchDesc": "展示团队在合成生物学、基因工程、微生物学等方面的前沿研究成果。",
-    "workLab": "实验成果",
-    "workLabDesc": "展示我们在多个项目中的实验数据和验证结果。",
+    "workResearch": "Our research",
+    "workResearchDesc": "Frontier work in synthetic biology, genetic engineering, and microbiology.",
+    "workLab": "Experimental results",
+    "workLabDesc": "Experimental data and validation from our projects.",
     "learnMore": "Learn more",
     "contactTitle": "Contact us",
     "contactFormSubject": "[SYPHU-China iGEM] Website contact form",
@@ -109,61 +109,114 @@
     "heroLead": "iGEM is more than wet lab and modelling—it is interdisciplinary teamwork and global exchange. Below are common team roles; reach us via the form at the bottom.",
     "toForm": "Go to form",
     "expectTitle": "What we look for together",
-    "expectFoot": "各队招新推文常强调：专业方向匹配、可迁移技能与团队感同等重要——以上条目供参考，以当届面试通知为准。",
+    "expectFoot": "Team posts often stress fit, transferable skills, and teamwork—the above is for reference; the current cycle’s interview notice prevails.",
     "groupsTitle": "Roles and expectations",
     "nextTitle": "What happens next",
-    "nextBody": "一般流程包括：关注招新群/公众号推送 → 填写意向或参加面试 → 试训与分工。具体时间节点与面试形式每年由队长组发布；可先通过下方表单留下联系方式与意向组别。",
+    "nextBody": "Typical flow: follow the team’s WeChat / announcements → submit interest or join interviews → training and roles. Exact dates and formats are published yearly by the leads; you can leave your track and contact in the form below.",
     "contactTitle": "Contact us",
     "contactHint": "Please include year/major, preferred track, availability, and a reachable email.",
     "placeholderName": "Your name",
     "placeholderEmail": "Your email",
     "placeholderMsg": "Message (suggested: preferred track)",
-    "formSubject": "[SYPHU-China iGEM] Recruitment inquiry"
+    "formSubject": "[SYPHU-China iGEM] Recruitment inquiry",
+    "groups": {
+      "wet": {
+        "title": "Wet lab",
+        "short": "Hands-on lab work—the physical core of the synthetic biology project.",
+        "points": [
+          "Cloning, culture, transformation, expression, gels/sequencing, phenotypes; hand data to dry lab.",
+          "You: bio/chem/pharmacy basics, careful hands, safety and records; fixed lab hours; tolerate iteration.",
+          "Beginners welcome if motivated: shared SOP training; responsibility and commitment matter most."
+        ]
+      },
+      "dry": {
+        "title": "Dry lab",
+        "short": "Modelling, simulation, data analysis, and computational support.",
+        "points": [
+          "Dynamics/flux models, stats and plots, parameter fitting and sensitivity; small scripts or pipelines.",
+          "You: calculus + coding (Python/MATLAB/R), clear hypotheses, figures and text ready for Wiki.",
+          "Math, CS, stats, pharmaceutical engineering (computational) backgrounds welcome; English reading matters."
+        ]
+      },
+      "hp": {
+        "title": "Human Practices (HP)",
+        "short": "Taking the project beyond the lab: society, ethics, education, outreach.",
+        "points": [
+          "Interviews, surveys, outreach, policy/ethics, hospital or industry contacts; materials and narratives.",
+          "You: communication and writing; run interviews and events; English helps for judging materials.",
+          "Public health, clinical pharmacy, management, journalism, English, etc.—empathy and execution."
+        ]
+      },
+      "wiki": {
+        "title": "Wiki / IT",
+        "short": "Official Wiki site, information architecture, and technical implementation.",
+        "points": [
+          "IA, migration, styles, Git collaboration, pre-deadline integration; coordinate timing with art and subteams.",
+          "You: HTML/CSS basics or willing to learn; read English docs; version control; crunch-time edits.",
+          "Division from pure design: Wiki focuses on site and docs; art supplies major visuals."
+        ]
+      },
+      "art": {
+        "title": "Art & design",
+        "short": "Visual identity, infographics, presentation and promo materials.",
+        "points": [
+          "Branding, posters, handouts, infographics, deck visuals, short video or motion (as assigned).",
+          "You: PS/AI/ID or similar; layout and colour; PR/AE/Blender is a plus.",
+          "Iterate toward Wiki and presentation deadlines; portfolios (coursework or competitions) help matching."
+        ]
+      }
+    },
+    "commonExpect": [
+      "Align with team goals; attend meetings; high commitment from summer to competition.",
+      "Report progress honestly; follow lab safety, ethics, and university rules.",
+      "English: read Wiki and papers; speaking and defence improve during prep.",
+      "All years welcome—many teams mentor juniors from basic roles."
+    ]
   },
   "labs": {
     "heroKicker": "Laboratory & Research",
     "galleryTitle": "Gallery",
     "galleryIntro": "Images from iGEM Wiki static hosting; refer to {wiki}.",
-    "wikiOfficial": "官方 Wiki",
+    "wikiOfficial": "Official Wiki",
     "viewSource": "View source",
-    "footNote": "如需增删图片，可编辑 {file} 中的静态站地址（须与 Wiki 一致）。",
+    "footNote": "To add or remove images, edit static URLs in {file} (must match the Wiki).",
     "kindLabel": {
       "igem": "iGEM Wiki"
     }
   },
   "labIntro": {
     "title": "SYPHU · Laboratories & research environment",
-    "lead": "SYPHU hosts a national pharmaceutical experimental teaching centre and multiple sub-centres, supporting wet lab and interdisciplinary work for teams like SYPHU-China iGEM.",
-    "centerLabel": "National centre website"
+    "lead": "SYPHU hosts a national pharmaceutical experimental teaching centre (established 2001; national status 2007) with multiple sub-centres, supporting wet lab and interdisciplinary work for teams like SYPHU-China iGEM.",
+    "centerLabel": "National experimental teaching centre (pharmacy) — official site"
   },
   "labGallery": {
     "igem-edu-platform": {
-      "title": "实验教学平台（iGEM Wiki 素材）",
-      "caption": "SYPHU-China 2025 项目记载的实验教学与平台展示。"
+      "title": "Teaching platform (iGEM Wiki assets)",
+      "caption": "Teaching platform and showcase as documented on the 2025 project Wiki."
     },
     "igem-cell": {
-      "title": "细胞与药学主题视觉",
-      "caption": "2025 团队 Wiki 首页科研相关配图。"
+      "title": "Cells and pharmacy theme",
+      "caption": "Research visuals from the 2025 team Wiki home."
     },
     "igem-exp1": {
-      "title": "实验记录掠影 ①",
-      "caption": "SYPHU-China 2024 iGEM 项目实验部分公开素材。"
+      "title": "Lab notes ①",
+      "caption": "2024 project wet-lab materials on the Wiki."
     },
     "igem-exp2": {
-      "title": "实验记录掠影 ②",
-      "caption": "2024 湿实验相关图示与场景。"
+      "title": "Lab notes ②",
+      "caption": "2024 wet-lab figures and scenes."
     },
     "igem-exp3": {
-      "title": "实验记录掠影 ③",
-      "caption": "团队实验流程与结果展示（Wiki）。"
+      "title": "Lab notes ③",
+      "caption": "Workflow and results on the Wiki."
     },
     "igem-lab-safety": {
-      "title": "实验室安全与场景",
-      "caption": "2024 Wiki 安全与实验室环境相关配图。"
+      "title": "Lab safety and environment",
+      "caption": "2024 Wiki figures for safety and lab environment."
     },
     "igem-results": {
-      "title": "实验成果展示",
-      "caption": "2024 项目结果页面公开图片。"
+      "title": "Results showcase",
+      "caption": "Images from the 2024 results page."
     }
   },
   "partnership": {
@@ -172,16 +225,16 @@
     "heroLead": "We welcome exchanges with iGEM teams worldwide and partnerships with industry, translating ideas from class and lab into the real world.",
     "contactCta": "Contact us",
     "inviteTitle": "Invitation to the global iGEM community",
-    "inviteP1": "iGEM 的价值在于开放协作与知识共享。我们渴望与各大洲的参赛团队建立长期联系：分享湿实验与干实验经验、Human Practices 与科普实践、Wiki 与答辩准备心得，以及在规则与伦理框架下的跨校联合活动等。",
-    "inviteP2": "若贵队希望开展校际交流、Guest Speaker、联合 outreach 或赛前友好互评，请通过页面底部表单与我们联系，并注明学校/团队名称与期望的协作形式。",
+    "inviteP1": "iGEM is built on open collaboration: we want long-term links with teams worldwide—wet and dry lab, Human Practices and outreach, Wiki and judging prep, and joint activities within the rules.",
+    "inviteP2": "For guest talks, joint outreach, or friendly reviews before judging, use the form at the bottom and include your school/team and preferred format.",
     "whereTitle": "Where we are",
-    "addrShenyangTitle": "沈阳校区（校本部）",
-    "addrShenyang": "辽宁省沈阳市沈河区文化路 103 号",
-    "zipLabel": "邮编",
+    "addrShenyangTitle": "Shenyang campus (main)",
+    "addrShenyang": "103 Wenhua Road, Shenhe District, Shenyang, Liaoning, China",
+    "zipLabel": "Postcode",
     "zipShenyang": "110016",
-    "addrBenxiTitle": "本溪校区（南校区）",
-    "addrBenxi": "辽宁省本溪市高新技术产业开发区华佗大街 26 号 · 邮编 117004（学校另设南校区；团队日常以学院安排为准）。",
-    "mapLink": "在 OpenStreetMap 中打开主校区附近地图",
+    "addrBenxiTitle": "Benxi campus (south)",
+    "addrBenxi": "26 Huatuo Street, Benxi High-tech Zone, Liaoning · 117004 (south campus exists; day-to-day arrangements follow the school).",
+    "mapLink": "Open map near main campus (OpenStreetMap)",
     "campusNewsTitle": "Campus & news",
     "newsKickerMedEd": "Medicine & education",
     "newsKickerIntl": "International",
@@ -224,32 +277,32 @@
     },
     "readFull": "Read article →",
     "sponsorTitle": "Sponsorship & industry",
-    "sponsorLead": "合成生物学正在从论文走向产品。我们期待与生物制药、合成生物、诊断与实验室技术、绿色制造等领域企业展开合作：可为项目提供实验耗材与表征支持、数据与场景验证、科普与品牌共创，以及在合规与伦理审查框架下的联合曝光。",
+    "sponsorLead": "Synthetic biology is moving from papers to products. We work with biopharma, synbio, diagnostics, and green manufacturing—supplies, characterisation, validation, outreach, and compliant co-branding.",
     "igemKicker": "iGEM",
     "valuesTitle": "Values",
-    "philosophy1": "开放与共享：标准 DNA 元件（Registry）、团队互助与全球社区，是 iGEM 的底色。",
-    "philosophy2": "安全与责任：从实验室到公众，强调生物安全、伦理与负责任的创新。",
-    "philosophy3": "Human Practices：项目扎根真实世界，关注社会、法律、教育与利益相关方。",
-    "philosophy4": "从研究到影响：高质量 Wiki、可复现实验，以及面向真实需求的转化与创业探索（含竞赛中的 Entrepreneurship 等相关方向）。",
-    "competitionNote": "更多定义与规则以 competition.igem.org 与当年赛程为准。",
-    "startupsLead": "以下配图选自 startups.igem.org 使用的官方静态资源，突出全球校友初创规模与地理分布。",
+    "philosophy1": "Openness & sharing: the Registry, peer support, and the global community are core to iGEM.",
+    "philosophy2": "Safety & responsibility: from bench to public—biosafety, ethics, responsible innovation.",
+    "philosophy3": "Human Practices: projects grounded in real-world social, legal, educational, and stakeholder contexts.",
+    "philosophy4": "From research to impact: strong Wikis, reproducible experiments, and translation or entrepreneurship (including related competition tracks).",
+    "competitionNote": "Definitions and rules: see competition.igem.org and the handbook for the current year.",
+    "startupsLead": "Figures below are official static assets from startups.igem.org, highlighting global alumni startup scale and geography.",
     "openStartups": "Open iGEM Startups",
-    "startupsHeadline": "350+ 初创企业，覆盖 50+ 国家与地区",
-    "startupsBlurb": "iGEM Startups 将竞赛中的创新项目与创业辅导、社群与资源对接起来；官网用下图概括全球校友初创企业的规模与分布趋势。",
+    "startupsHeadline": "350+ startups across 50+ countries and regions",
+    "startupsBlurb": "iGEM Startups connects competition projects with mentoring and networks; the figure below summarises scale and trends.",
     "mapLabel": "Alumni startup map",
-    "mapCaption": "动图示意全球校友初创企业地理分布，与 iGEM Startups 叙事一致。",
-    "mapTech": "资源路径：",
-    "mapSlow": "（动图体积较大，首次加载可能稍慢。）",
+    "mapCaption": "Animated overview of global alumni startups, aligned with the iGEM Startups narrative.",
+    "mapTech": "Asset path: ",
+    "mapSlow": "(Large GIF; first load may be slow.)",
     "timelineLabel": "iGEM Startups timeline",
-    "spotlightHeading": "官网首页展示的初创案例（节选）",
-    "coop1t": "科研与实验",
-    "coop1d": "菌株与实验设计、分析检测、安全与质量控制等方向的对接与讨论。",
-    "coop2t": "品牌与传播",
-    "coop2d": "Wiki、答辩、开放日与社交媒体的致谢与联合传播（遵守 iGEM 规则与学校规定）。",
-    "coop3t": "长期关系",
-    "coop3d": "欢迎与团队建立持续 mentorship 与人才交流，具体权益以书面协议与当年赛程为准。",
+    "spotlightHeading": "Homepage startup spotlights (selection)",
+    "coop1t": "Research & lab",
+    "coop1d": "Strains, experimental design, analytics, safety and QC—discussion and collaboration.",
+    "coop2t": "Brand & communications",
+    "coop2d": "Wiki, judging, open days, social—joint visibility within iGEM rules and school policy.",
+    "coop3t": "Long-term relationship",
+    "coop3d": "Mentorship and talent exchange; details subject to written agreements and the current handbook.",
     "contactSectionTitle": "Contact",
-    "placeholderOrg": "学校 / iGEM 团队名 / 企业名称（选填）",
+    "placeholderOrg": "School / iGEM team / company (optional)",
     "placeholderMsgP": "Partnership intent, timeframe, and preferred contact areas",
     "formSubjectMail": "[SYPHU-China iGEM] Partnership inquiry"
   },
@@ -263,13 +316,14 @@
     "network": "Network error. Check your connection.",
     "envHintRecruit": "Set VITE_WEB3FORMS_ACCESS_KEY in project root .env",
     "envHintTeam": "Create .env with VITE_WEB3FORMS_ACCESS_KEY (get a free key at web3forms.com).",
-    "envHintPartnership": "Set VITE_WEB3FORMS_ACCESS_KEY in project root .env"
+    "envHintPartnership": "Set VITE_WEB3FORMS_ACCESS_KEY in project root .env",
+    "orgLinePrefix": "Organization / team: "
   },
   "teamPi": {
     "name": "Prof. Xianpu Ni",
     "titles": "Director, Biotechnology & Biopharmaceutics · Master supervisor",
     "affiliation": "School of Life Science and Biopharmaceutics, SYPHU",
-    "research": "倪现朴教授长期从事微生物药物代谢工程、微生物药物生物合成途径与机制、以及活体微生物药物的合成生物学等方向的研究；主持国家自然科学基金、辽宁省自然科学基金面上项目、辽宁省教育厅重点攻关项目等课题，在 Applied Microbiology and Biotechnology、Microbial Cell Factories 等期刊发表多篇论文，入选辽宁省“百千万人才”工程培养人选等人才计划。",
-    "igemSupport": "倪老师始终关心并推动沈阳药科大学 iGEM 参赛与合成生物学人才培养工作，在校内牵头组织与支持相关事务，鼓励沈药学子走上国际赛事舞台，与来自全球的优秀青年团队同台交流、同台竞技，在实践中历练科研与创新能力。"
+    "research": "Prof. Ni works on microbial drug metabolic engineering, biosynthetic pathways and mechanisms of microbial drugs, and synthetic biology for live biotherapeutics. He has led projects funded by the NSFC, Liaoning Provincial NSF, and the Provincial Department of Education, and published in journals such as Applied Microbiology and Biotechnology and Microbial Cell Factories. He was selected for Liaoning provincial talent programmes.",
+    "igemSupport": "He champions SYPHU’s iGEM participation and synthetic-biology training, coordinates related activities on campus, and encourages students to compete and collaborate with teams worldwide."
   }
 }

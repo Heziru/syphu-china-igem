@@ -1,11 +1,23 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SiteNav from '../components/SiteNav.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 import { SITE_CONTACT } from '../data/siteContact.js'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
+
+const groupKeys = ['wet', 'dry', 'hp', 'wiki', 'art']
+
+const commonExpectLines = computed(() => {
+  const v = tm('recruit.commonExpect')
+  return Array.isArray(v) ? v : []
+})
+
+function groupPoints(key) {
+  const v = tm(`recruit.groups.${key}.points`)
+  return Array.isArray(v) ? v : []
+}
 const web3AccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || ''
 
 const contactName = ref('')
@@ -50,67 +62,6 @@ async function submitContact() {
     submitting.value = false
   }
 }
-
-/** 组别说明：综合常见 iGEM 队伍分工与招新介绍方式整理，具体以当届队长发布为准 */
-const groups = [
-  {
-    key: 'wet',
-    title: '湿实验组 · Wet Lab',
-    short: '在实验室里完成合成生物学项目的「实体」部分',
-    points: [
-      '承担分子克隆、菌株培养、转化、表达验证、电泳/测序鉴定、部分表型或功能实验等；与干实验对接实验数据。',
-      '希望你：有生物/化学/药学类课程基础，动手细心，能严格遵守实验室安全与记录规范；愿意投入固定时段进实验室，接受重复实验与失败迭代。',
-      '零基础但学习意愿强亦可：队内需统一培训 SOP，更看重责任心与长期投入。',
-    ],
-  },
-  {
-    key: 'dry',
-    title: '干实验组 · Dry Lab',
-    short: '建模、仿真、数据分析与计算支撑',
-    points: [
-      '常见工作包括：动力学/通量模型、统计与可视化、参数估计与敏感性分析、与湿实验迭代验证假设；部分队伍也承担小型工具脚本或数据管线。',
-      '希望你：具备高等数学与编程基础（如 Python / MATLAB / R 等任一），逻辑清晰，能把假设写清楚、把图表与结论写进 Wiki。',
-      '数学、计算机、统计、制药工程（计算方向）等背景均可；英语阅读文献能力重要。',
-    ],
-  },
-  {
-    key: 'hp',
-    title: '人类实践 · Human Practices (HP)',
-    short: '让项目「走出实验室」：社会、伦理、教育与传播',
-    points: [
-      '典型工作：调研患者/医生/公众需求、设计访谈与问卷、科普活动与课程、政策与伦理梳理、与医院或企业沟通；产出教育材料、推送与故事线。',
-      '希望你：沟通与写作能力突出，能独立推进访谈与活动落地；对社会议题敏感，英语读写佳者更利于国际评审材料。',
-      '公卫、临床药学、管理、新闻、英语等专业常有优势；重在共情与执行力。',
-    ],
-  },
-  {
-    key: 'wiki',
-    title: 'Wiki / 信息技术组',
-    short: '官方 Wiki 站点、文档结构与部分技术实现',
-    points: [
-      '负责页面信息架构、内容迁移、样式与交互、Git 协作、Deadline 前联调；与美工、各组合稿时间与版式。',
-      '希望你：熟悉 HTML/CSS 基础或愿意学，能读英文技术文档；细心、有版本管理习惯，能承受赛期集中改稿。',
-      '与「纯美工」分工：Wiki 偏站点与文档，视觉大物料常由美工组输出素材后接入。',
-    ],
-  },
-  {
-    key: 'art',
-    title: '美工与多媒体 · Art & Design',
-    short: '视觉识别、信息图、答辩与宣传物料',
-    points: [
-      '常见工作：队徽与主视觉延展、海报与手册、数据信息图、PPT/答辩视觉、短视频或动效（视当年分工而定）。',
-      '希望你：熟练使用 PS / AI / ID 等之一，有版式与配色基础；会 PR/AE/Blender 等其一为加分项。',
-      '需能按 Wiki 与答辩截稿迭代，接受多轮修改；作品集（课程作业/比赛物料均可）有助于互选。',
-    ],
-  },
-]
-
-const commonExpect = [
-  '认同团队目标，能参加例会与组内分工，赛期（尤其暑期至赛前）保持较高投入。',
-  '诚实沟通进度与困难；尊重实验室安全、伦理与学校规章制度。',
-  '英语：至少能阅读 Wiki 与文献片段；口语与答辩能力会在备赛过程中集体训练。',
-  '不限年级：许多队伍欢迎低年级同学从基础岗位做起，以学习与传承为主。',
-]
 </script>
 
 <template>
@@ -156,7 +107,7 @@ const commonExpect = [
       <div class="max-w-3xl mx-auto">
         <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">{{ t('recruit.expectTitle') }}</h2>
         <ul class="space-y-3 text-gray-700 leading-relaxed">
-          <li v-for="(line, i) in commonExpect" :key="i" class="flex gap-3">
+          <li v-for="(line, i) in commonExpectLines" :key="i" class="flex gap-3">
             <span class="text-[#B22222] font-bold shrink-0">·</span>
             <span>{{ line }}</span>
           </li>
@@ -175,15 +126,15 @@ const commonExpect = [
 
         <div class="space-y-10">
           <article
-            v-for="g in groups"
-            :key="g.key"
+            v-for="key in groupKeys"
+            :key="key"
             class="scroll-mt-28 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-shadow hover:shadow-md sm:p-8 md:p-10 md:scroll-mt-24"
-            :id="g.key"
+            :id="key"
           >
-            <h3 class="text-xl md:text-2xl font-bold text-[#B22222]">{{ g.title }}</h3>
-            <p class="mt-2 text-gray-600 font-medium">{{ g.short }}</p>
+            <h3 class="text-xl md:text-2xl font-bold text-[#B22222]">{{ t(`recruit.groups.${key}.title`) }}</h3>
+            <p class="mt-2 text-gray-600 font-medium">{{ t(`recruit.groups.${key}.short`) }}</p>
             <ul class="mt-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
-              <li v-for="(p, idx) in g.points" :key="idx" class="pl-4 border-l-2 border-[#B22222]/30">
+              <li v-for="(p, idx) in groupPoints(key)" :key="idx" class="pl-4 border-l-2 border-[#B22222]/30">
                 {{ p }}
               </li>
             </ul>

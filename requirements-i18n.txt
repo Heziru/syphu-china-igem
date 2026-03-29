@@ -1,0 +1,3 @@
+# 可选：本地批量机翻 locale JSON（见 scripts/translate_locales.py）
+# pip install -r requirements-i18n.txt
+translators>=5.9,<6
