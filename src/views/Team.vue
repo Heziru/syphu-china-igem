@@ -70,7 +70,7 @@
               <template v-for="block in roster2025" :key="block.subsection">
                 <div>
                   <h4 class="text-lg font-bold text-gray-900 mb-1 text-center">
-                    {{ block.subsectionZh }}
+                    {{ t(`team.rosterSubsection.${block.subsectionKey}`) }}
                     <span class="text-xs font-normal text-gray-400 tracking-wide ml-2">{{ block.subsection }}</span>
                   </h4>
                   <div class="h-px bg-gray-200 mb-8 max-w-md mx-auto" />
@@ -91,9 +91,9 @@
                       <div class="p-5 flex-1 flex flex-col text-left">
                         <h5 class="font-bold text-gray-900">{{ member.name }}</h5>
                         <p v-if="member.roles?.length" class="mt-1 text-xs text-[#B22222] font-medium">
-                          {{ member.roles.join(' · ') }}
+                          {{ roleLine(member) }}
                         </p>
-                        <p class="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{{ member.bio }}</p>
+                        <p class="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{{ localizedBio(member) }}</p>
                       </div>
                     </article>
                   </div>
@@ -106,12 +106,12 @@
               <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-center sm:text-left">
                 <img
                   :src="roster2024.logoUrl"
-                  alt="SYPHU-China iGEM 2024"
+                  :alt="t('team.logo2024Alt')"
                   class="max-h-24 object-contain shrink-0"
                   loading="lazy"
                 />
                 <div class="text-sm text-gray-600 max-w-xl">
-                  <p>{{ roster2024.sourceNote }}</p>
+                  <p>{{ t('team.roster2024SourceNote') }}</p>
                   <a
                     :href="roster2024.wikiUrl"
                     class="mt-2 inline-block text-[#B22222] font-semibold underline hover:no-underline"
@@ -139,9 +139,9 @@
                   <div class="p-5 flex-1 flex flex-col text-left">
                     <h5 class="font-bold text-gray-900">{{ member.name }}</h5>
                     <p v-if="member.roles?.length" class="mt-1 text-xs text-[#B22222] font-medium">
-                      {{ member.roles.join(' · ') }}
+                      {{ roleLine(member) }}
                     </p>
-                    <p class="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{{ member.bio }}</p>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{{ localizedBio(member) }}</p>
                   </div>
                 </article>
               </div>
@@ -165,7 +165,7 @@
                   </div>
                   <div class="p-5 flex-1 flex flex-col text-left">
                     <h5 class="font-bold text-gray-900">{{ member.name }}</h5>
-                    <p class="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{{ member.bio }}</p>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{{ localizedBio(member) }}</p>
                   </div>
                 </article>
               </div>
@@ -263,7 +263,28 @@
   import SiteFooter from '../components/SiteFooter.vue'
   import { wikiTeamPages, roster2025, roster2023, roster2024 } from '../data/teamWiki.js'
 
-  const { t } = useI18n()
+  const { t, te, locale } = useI18n()
+
+  /** 按当前界面语言取文案，避免 fallbackLocale 把简介退回简体 */
+  function localizedBio(member) {
+    if (!member.bioKey) return ''
+    const k = `teamRoster.bio.${member.bioKey}`
+    const loc = locale.value
+    if (!te(k, loc)) return ''
+    return t(k, loc)
+  }
+
+  function roleLine(member) {
+    if (!member.roles?.length) return ''
+    const loc = locale.value
+    return member.roles
+      .map((rk) => {
+        const key = `team.roles.${rk}`
+        return te(key, loc) ? t(key, loc) : ''
+      })
+      .filter(Boolean)
+      .join(' · ')
+  }
 
   const seasonYears = [2025, 2024, 2023]
   const activeYear = ref(2025)

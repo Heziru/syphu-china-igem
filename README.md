@@ -85,3 +85,21 @@ python scripts/translate_locales.py --target fr zh-TW --sleep 0.5
 ```
 
 也可用 `npm run i18n:translate`（需本机已安装 Python 且可执行 `python`）。机翻仅供参考，发布前请人工校对；请遵守各翻译服务的使用条款，避免短时间大量请求。
+
+### 繁体中文（OpenCC，推荐）
+
+港台繁体应以 **`src/locales/zh-CN.json` 为唯一主文案**，用 [OpenCC](https://github.com/BYVoid/OpenCC) 做**简转繁**（非机翻英文），生成 `zh-TW.json`（**s2twp**，台湾用词）与 `zh-HK.json`（**s2hk**，香港用词），会**整文件覆盖**这两个文件。
+
+```bash
+pip install -r requirements-i18n.txt
+python scripts/opencc_locales.py
+# 或 npm run i18n:opencc
+```
+
+仅更新台湾或香港其一：`python scripts/opencc_locales.py --no-hk` 或 `--no-tw`。
+
+**维护流程**：先改 `zh-CN.json` → 再运行上述命令 → `npm run i18n:check`。若曾对 `zh-TW`/`zh-HK` 手写修改，运行前请自行备份（脚本以简体源为准重生成）。
+
+### 团队页成员简介（`teamRoster.bio`）
+
+历届成员卡片上的**简介**来自 `src/locales/partials/teamRoster.bio.*.json`（在 `src/i18n/index.js` 中合并为 `teamRoster.bio`）。**主文案**：`teamRoster.bio.zh-CN.json`；英文、法文为对应 `en`/`fr` 文件；繁体由 OpenCC 自简体生成 `zh-TW`/`zh-HK`。成员**姓名**仍在 `src/data/teamWiki.js` 中保持英文（及 `nameZh` 仅作数据保留，页面不强制显示）。改简介时同步更新各语言分片后执行 `npm run i18n:check`。

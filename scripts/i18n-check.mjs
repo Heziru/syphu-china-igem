@@ -25,13 +25,26 @@ function flatten(obj, prefix = '') {
 
 const masterName = 'zh-CN.json'
 const master = JSON.parse(fs.readFileSync(path.join(dir, masterName), 'utf8'))
+const bioPartial = path.join(dir, 'partials', 'teamRoster.bio.zh-CN.json')
+if (fs.existsSync(bioPartial)) {
+  master.teamRoster = { bio: JSON.parse(fs.readFileSync(bioPartial, 'utf8')) }
+}
 const masterKeys = new Set(flatten(master))
 
 const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json') && f !== masterName)
 
+function loadLocaleMerged(name) {
+  const j = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'))
+  const bioPath = path.join(dir, 'partials', `teamRoster.bio.${name}`)
+  if (fs.existsSync(bioPath)) {
+    j.teamRoster = { bio: JSON.parse(fs.readFileSync(bioPath, 'utf8')) }
+  }
+  return j
+}
+
 let exit = 0
 for (const f of files.sort()) {
-  const j = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))
+  const j = loadLocaleMerged(f)
   const keys = new Set(flatten(j))
   const missing = [...masterKeys].filter((k) => !keys.has(k))
   const extra = [...keys].filter((k) => !masterKeys.has(k))

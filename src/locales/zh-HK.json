@@ -1,22 +1,22 @@
 {
   "nav": {
-    "home": "首页",
-    "projects": "历年项目",
-    "labs": "实验室环境",
-    "team": "我们的团队",
+    "home": "首頁",
+    "projects": "歷年項目",
+    "labs": "實驗室環境",
+    "team": "我們的團隊",
     "recruit": "招新",
     "partnership": "交流 · 贊助",
-    "join": "加入我们",
-    "contact": "联系我们",
-    "work": "我们的工作"
+    "join": "加入我們",
+    "contact": "聯繫我們",
+    "work": "我們的工作"
   },
   "footer": {
     "rights": "© 2026 SYPHU-China iGEM Team. All Rights Reserved.",
     "school": "瀋陽藥科大學 · 創新藥學人才的搖籃"
   },
   "lang": {
-    "label": "语言",
-    "zh-CN": "简体中文",
+    "label": "語言",
+    "zh-CN": "簡體中文",
     "zh-HK": "繁體中文（中國香港）",
     "zh-TW": "繁體中文（中國台灣）",
     "en": "English",
@@ -30,15 +30,15 @@
     "heroSubtitle": "瀋陽藥科大學 SYPHU-China iGEM 團隊",
     "projectsKicker": "Projects",
     "projectsTitle": "歷年項目回顧",
-    "projectsIntro": "每一年围绕{strong}推进合成生物学设计与验证。",
-    "projectsIntroStrong": "不同疾病与临床需求",
-    "seasonFocus": "{year} 赛季 · 疾病聚焦",
-    "viewWiki": "查看项目 Wiki",
-    "sourceRepo": "GitLab 源码（pages/）",
-    "sourceNote2024": "静态资源见 {path5270} ，与 GitLab {pages} 部署一致，可对照源码。",
-    "statsCaption": "（与官网首页统计图一致）",
-    "enSiteNote": "英文站为 350+ startups and counting · from over 50 countries；具体以{wiki}更新为准。",
-    "wikiLink": "官网"
+    "projectsIntro": "每一年圍繞{strong}推進合成生物學設計與驗證。",
+    "projectsIntroStrong": "不同疾病與臨牀需求",
+    "seasonFocus": "{year} 賽季 · 疾病聚焦",
+    "viewWiki": "查看項目 Wiki",
+    "sourceRepo": "GitLab 源碼（pages/）",
+    "sourceNote2024": "靜態資源見 {path5270} ，與 GitLab {pages} 部署一致，可對照源碼。",
+    "statsCaption": "（與官網首頁統計圖一致）",
+    "enSiteNote": "英文站為 350+ startups and counting · from over 50 countries；具體以{wiki}更新為準。",
+    "wikiLink": "官網"
   },
   "projects": {
     "tags": {
@@ -47,194 +47,220 @@
     },
     "cards": {
       "2023": {
-        "diseaseTitle": "HER2 阳性肿瘤细胞",
-        "diseaseSubtitle": "趋化靶向肿瘤微环境 · ADC 与乳酸感应元件",
+        "diseaseTitle": "HER2 陽性腫瘤細胞",
+        "diseaseSubtitle": "趨化靶向腫瘤微環境 · ADC 與乳酸感應元件",
         "title": "SYPHU-China 2023 Project",
-        "description": "SYPHU-China 团队在 2023 年专注于 HER2 阳性实体瘤的靶向治疗。通过基因回路构建，设计了一个可自主泳动并靶向肿瘤微环境的元件，结合抗体-毒性蛋白偶联药物（ADC）实现对 HER2 阳性肿瘤细胞的精准打击。团队还开发了多种合成生物学元件，如感应乳酸的受体 eTlpC 和高强度启动子。项目凭借创新的实验结果和完备的答辩展示，获得了国际评审专家的高度认可。",
-        "imgAlt0": "HER2 主题动画",
+        "description": "SYPHU-China 團隊在 2023 年專注於 HER2 陽性實體瘤的靶向治療。通過基因迴路構建，設計了一個可自主泳動並靶向腫瘤微環境的元件，結合抗體-毒性蛋白偶聯藥物（ADC）實現對 HER2 陽性腫瘤細胞的精準打擊。團隊還開發了多種合成生物學元件，如感應乳酸的受體 eTlpC 和高強度啓動子。項目憑藉創新的實驗結果和完備的答辯展示，獲得了國際評審專家的高度認可。",
+        "imgAlt0": "HER2 主題動畫",
         "imgAlt1": "模型",
-        "imgAlt2": "项目描述配图",
-        "cap0": "首页 HER2 视觉",
+        "imgAlt2": "項目描述配圖",
+        "cap0": "首頁 HER2 視覺",
         "cap1": "model",
         "cap2": "description"
       },
       "2024": {
         "diseaseTitle": "脂溢性皮炎",
-        "diseaseSubtitle": "罗伊氏乳杆菌皮肤微环境靶向 · 动态抗菌肽释放",
+        "diseaseSubtitle": "羅伊氏乳桿菌皮膚微環境靶向 · 動態抗菌肽釋放",
         "title": "SYPHU-China 2024 Project",
-        "description": "SYPHU-China 团队通过基因工程改造乳酸菌 Lactobacillus reuteri DSM17938，构建了一个靶向皮肤微环境的长效治疗系统。该工程菌株能够特异性迁移至乳酸浓度较高的皮肤环境，并且通过合成生物学手段，设计了一个动态响应系统，可自动激活抗菌肽（AMP）释放。研究证明，该系统相比传统抗真菌疗法，能有效降低皮肤病复发率，且对宿主微生物群无明显影响，为慢性炎症性皮肤病的治疗提供了新范式。",
-        "imgAlt0": "2024 湿实验",
-        "imgAlt1": "实验结果",
-        "imgAlt2": "实验室与安全",
+        "description": "SYPHU-China 團隊通過基因工程改造乳酸菌 Lactobacillus reuteri DSM17938，構建了一個靶向皮膚微環境的長效治療系統。該工程菌株能夠特異性遷移至乳酸濃度較高的皮膚環境，並且通過合成生物學手段，設計了一個動態響應系統，可自動激活抗菌肽（AMP）釋放。研究證明，該系統相比傳統抗真菌療法，能有效降低皮膚病複發率，且對宿主微生物羣無明顯影響，為慢性炎症性皮膚病的治療提供了新範式。",
+        "imgAlt0": "2024 濕實驗",
+        "imgAlt1": "實驗結果",
+        "imgAlt2": "實驗室與安全",
         "cap0": "experiments",
         "cap1": "results",
         "cap2": "safety / lab"
       },
       "2025": {
         "diseaseTitle": "肝癌",
-        "diseaseSubtitle": "大肠杆菌 Nissle 1917 靶向肿瘤微环境 · 全反式维甲酸与耐药逆转",
+        "diseaseSubtitle": "大腸桿菌 Nissle 1917 靶向腫瘤微環境 · 全反式維甲酸與耐藥逆轉",
         "title": "SYPHU-China 2025 Project",
-        "description": "SYPHU-China 团队使用大肠杆菌 Nissle 1917 作为底盘，通过基因工程改造，使其具备主动靶向以及原位合成的特性。利用趋化性，使细菌能够主动向肿瘤微环境中高浓度的乳酸迁移。改造后的细菌能在肿瘤部位利用内源性底物合成全反式维甲酸。AIVC 模型预测全反式维甲酸可诱导肿瘤起始细胞分化并逆转化疗耐药性，实验结果表明该联合治疗方案显著延长了肝癌患者的总生存期与无进展生存期，提出了一种新型有效的晚期肝癌治疗方案。",
-        "imgAlt0": "2025 项目主页示意",
-        "imgAlt1": "细胞与药学主题",
-        "imgAlt2": "2025 项目配图",
-        "cap0": "Wiki 首页",
-        "cap1": "首页视觉",
-        "cap2": "项目展示"
+        "description": "SYPHU-China 團隊使用大腸桿菌 Nissle 1917 作為底盤，通過基因工程改造，使其具備主動靶向以及原位合成的特性。利用趨化性，使細菌能夠主動向腫瘤微環境中高濃度的乳酸遷移。改造後的細菌能在腫瘤部位利用內源性底物合成全反式維甲酸。AIVC 模型預測全反式維甲酸可誘導腫瘤起始細胞分化並逆轉化療耐藥性，實驗結果表明該聯合治療方案顯著延長了肝癌患者的總生存期與無進展生存期，提出了一種新型有效的晚期肝癌治療方案。",
+        "imgAlt0": "2025 項目主頁示意",
+        "imgAlt1": "細胞與藥學主題",
+        "imgAlt2": "2025 項目配圖",
+        "cap0": "Wiki 首頁",
+        "cap1": "首頁視覺",
+        "cap2": "項目展示"
       }
     }
   },
   "team": {
     "title": "我們的團隊",
     "piKicker": "Principal Investigator",
-    "piHeading": "指导教师",
-    "rosterTitle": "历届参赛成员",
+    "piHeading": "指導教師",
+    "rosterTitle": "歷屆參賽成員",
     "rosterIntroBefore": "以下信息整理自",
-    "rosterIntroAfter": "页面；简介为便于阅读做了缩写，完整英文自述以 Wiki 为准。",
-    "workTitle": "我们的工作",
-    "workResearch": "我们的研究",
-    "workResearchDesc": "展示团队在合成生物学、基因工程、微生物学等方面的前沿研究成果。",
-    "workLab": "实验成果",
-    "workLabDesc": "展示我们在多个项目中的实验数据和验证结果。",
-    "learnMore": "了解更多",
+    "rosterIntroAfter": "頁面；成員簡介與當前語言一致，為便於閲讀做了縮寫，完整內容以 Wiki 為準。",
+    "workTitle": "我們的工作",
+    "workResearch": "我們的研究",
+    "workResearchDesc": "展示團隊在合成生物學、基因工程、微生物學等方面的前沿研究成果。",
+    "workLab": "實驗成果",
+    "workLabDesc": "展示我們在多個項目中的實驗數據和驗證結果。",
+    "learnMore": "瞭解更多",
     "contactTitle": "聯繫我們",
     "contactFormSubject": "[SYPHU-China iGEM] 官網聯繫表單",
     "seasonLabel": "賽季",
     "wiki2024Link": "2024 iGEM Wiki — Team page",
-    "piPhotoAlt": "倪現朴教授"
+    "piPhotoAlt": "倪現樸教授",
+    "roster2024SourceNote": "成員照片與分工與 iGEM Wiki 靜態資源及 GitLab 源碼一致；簡介為便於閲讀做了縮寫，完整內容見團隊頁。",
+    "logo2024Alt": "SYPHU-China iGEM 2024 團隊標識",
+    "rosterSubsection": {
+      "teamLeader": "隊長",
+      "studentLeaders": "學生負責人",
+      "students": "隊員",
+      "advisors": "指導老師",
+      "pi": "PI"
+    },
+    "roles": {
+      "teamLeader": "隊長",
+      "leader": "領隊",
+      "dryLab": "幹實驗",
+      "wetLab": "濕實驗",
+      "hp": "Human Practices",
+      "hpLeader": "HP 負責人",
+      "wetLabLeader": "濕實驗負責人",
+      "dryLabLeader": "幹實驗負責人",
+      "wikiLeader": "Wiki 負責人",
+      "wiki": "Wiki",
+      "artDesign": "美工",
+      "artDesignLeader": "美工負責人",
+      "advisor": "指導老師",
+      "formerLeader": "往屆隊長",
+      "pi": "PI"
+    }
   },
   "recruit": {
     "heroKicker": "Recruitment",
     "heroTitle": "加入 SYPHU-China iGEM",
-    "heroLead": "合成生物学竞赛不仅是实验与建模，更是跨学科协作与全球交流。下面按常见 iGEM 队伍分工介绍各组职责与期望；欢迎结合自身兴趣选择方向，通过底部表单与我们联系。",
-    "toForm": "直达报名表单",
-    "expectTitle": "我们共同期待什么",
-    "expectFoot": "各队招新推文常强调：专业方向匹配、可迁移技能与团队感同等重要——以上条目供参考，以当届面试通知为准。",
-    "groupsTitle": "组别与能力期待",
-    "nextTitle": "接下来怎么做",
-    "nextBody": "一般流程包括：关注招新群/公众号推送 → 填写意向或参加面试 → 试训与分工。具体时间节点与面试形式每年由队长组发布；可先通过下方表单留下联系方式与意向组别。",
-    "contactTitle": "联系我们",
-    "contactHint": "建议留言中写明：年级专业、意向组别、可投入时间、联系方式（与邮箱一致即可）。",
+    "heroLead": "合成生物學競賽不僅是實驗與建模，更是跨學科協作與全球交流。下面按常見 iGEM 隊伍分工介紹各組職責與期望；歡迎結合自身興趣選擇方向，通過底部表單與我們聯繫。",
+    "toForm": "直達報名表單",
+    "expectTitle": "我們共同期待什麼",
+    "expectFoot": "各隊招新推文常強調：專業方向匹配、可遷移技能與團隊感同等重要——以上條目供參考，以當屆面試通知為準。",
+    "groupsTitle": "組別與能力期待",
+    "nextTitle": "接下來怎麼做",
+    "nextBody": "一般流程包括：關注招新羣/公眾號推送 → 填寫意向或參加面試 → 試訓與分工。具體時間節點與面試形式每年由隊長組發佈；可先通過下方表單留下聯繫方式與意向組別。",
+    "contactTitle": "聯繫我們",
+    "contactHint": "建議留言中寫明：年級專業、意向組別、可投入時間、聯繫方式（與郵箱一致即可）。",
     "placeholderName": "您的姓名",
-    "placeholderEmail": "您的邮箱",
-    "placeholderMsg": "您的留言（建议含意向组别）",
-    "formSubject": "[SYPHU-China iGEM] 招新咨询",
+    "placeholderEmail": "您的郵箱",
+    "placeholderMsg": "您的留言（建議含意向組別）",
+    "formSubject": "[SYPHU-China iGEM] 招新諮詢",
     "groups": {
       "wet": {
-        "title": "湿实验组 · Wet Lab",
-        "short": "在实验室里完成合成生物学项目的「实体」部分",
+        "title": "濕實驗組 · Wet Lab",
+        "short": "在實驗室裏完成合成生物學項目的「實體」部分",
         "points": [
-          "承担分子克隆、菌株培养、转化、表达验证、电泳/测序鉴定、部分表型或功能实验等；与干实验对接实验数据。",
-          "希望你：有生物/化学/药学类课程基础，动手细心，能严格遵守实验室安全与记录规范；愿意投入固定时段进实验室，接受重复实验与失败迭代。",
-          "零基础但学习意愿强亦可：队内需统一培训 SOP，更看重责任心与长期投入。"
+          "承擔分子克隆、菌株培養、轉化、表達驗證、電泳/測序鑑定、部分表型或功能實驗等；與幹實驗對接實驗數據。",
+          "希望你：有生物/化學/藥學類課程基礎，動手細心，能嚴格遵守實驗室安全與記錄規範；願意投入固定時段進實驗室，接受重複實驗與失敗迭代。",
+          "零基礎但學習意願強亦可：隊內需統一培訓 SOP，更看重責任心與長期投入。"
         ]
       },
       "dry": {
-        "title": "干实验组 · Dry Lab",
-        "short": "建模、仿真、数据分析与计算支撑",
+        "title": "幹實驗組 · Dry Lab",
+        "short": "建模、仿真、數據分析與計算支撐",
         "points": [
-          "常见工作包括：动力学/通量模型、统计与可视化、参数估计与敏感性分析、与湿实验迭代验证假设；部分队伍也承担小型工具脚本或数据管线。",
-          "希望你：具备高等数学与编程基础（如 Python / MATLAB / R 等任一），逻辑清晰，能把假设写清楚、把图表与结论写进 Wiki。",
-          "数学、计算机、统计、制药工程（计算方向）等背景均可；英语阅读文献能力重要。"
+          "常見工作包括：動力學/通量模型、統計與可視化、參數估計與敏感性分析、與濕實驗迭代驗證假設；部分隊伍也承擔小型工具腳本或數據管線。",
+          "希望你：具備高等數學與編程基礎（如 Python / MATLAB / R 等任一），邏輯清晰，能把假設寫清楚、把圖表與結論寫進 Wiki。",
+          "數學、計算機、統計、製藥工程（計算方向）等背景均可；英語閲讀文獻能力重要。"
         ]
       },
       "hp": {
-        "title": "人类实践 · Human Practices (HP)",
-        "short": "让项目「走出实验室」：社会、伦理、教育与传播",
+        "title": "人類實踐 · Human Practices (HP)",
+        "short": "讓項目「走出實驗室」：社會、倫理、教育與傳播",
         "points": [
-          "典型工作：调研患者/医生/公众需求、设计访谈与问卷、科普活动与课程、政策与伦理梳理、与医院或企业沟通；产出教育材料、推送与故事线。",
-          "希望你：沟通与写作能力突出，能独立推进访谈与活动落地；对社会议题敏感，英语读写佳者更利于国际评审材料。",
-          "公卫、临床药学、管理、新闻、英语等专业常有优势；重在共情与执行力。"
+          "典型工作：調研患者/醫生/公眾需求、設計訪談與問卷、科普活動與課程、政策與倫理梳理、與醫院或企業溝通；產出教育材料、推送與故事線。",
+          "希望你：溝通與寫作能力突出，能獨立推進訪談與活動落地；對社會議題敏感，英語讀寫佳者更利於國際評審材料。",
+          "公衞、臨牀藥學、管理、新聞、英語等專業常有優勢；重在共情與執行力。"
         ]
       },
       "wiki": {
-        "title": "Wiki / 信息技术组",
-        "short": "官方 Wiki 站点、文档结构与部分技术实现",
+        "title": "Wiki / 信息技術組",
+        "short": "官方 Wiki 站點、文檔結構與部分技術實現",
         "points": [
-          "负责页面信息架构、内容迁移、样式与交互、Git 协作、Deadline 前联调；与美工、各组合稿时间与版式。",
-          "希望你：熟悉 HTML/CSS 基础或愿意学，能读英文技术文档；细心、有版本管理习惯，能承受赛期集中改稿。",
-          "与「纯美工」分工：Wiki 偏站点与文档，视觉大物料常由美工组输出素材后接入。"
+          "負責頁面信息架構、內容遷移、樣式與交互、Git 協作、Deadline 前聯調；與美工、各組合稿時間與版式。",
+          "希望你：熟悉 HTML/CSS 基礎或願意學，能讀英文技術文檔；細心、有版本管理習慣，能承受賽期集中改稿。",
+          "與「純美工」分工：Wiki 偏站點與文檔，視覺大物料常由美工組輸出素材後接入。"
         ]
       },
       "art": {
-        "title": "美工与多媒体 · Art & Design",
-        "short": "视觉识别、信息图、答辩与宣传物料",
+        "title": "美工與多媒體 · Art & Design",
+        "short": "視覺識別、信息圖、答辯與宣傳物料",
         "points": [
-          "常见工作：队徽与主视觉延展、海报与手册、数据信息图、PPT/答辩视觉、短视频或动效（视当年分工而定）。",
-          "希望你：熟练使用 PS / AI / ID 等之一，有版式与配色基础；会 PR/AE/Blender 等其一为加分项。",
-          "需能按 Wiki 与答辩截稿迭代，接受多轮修改；作品集（课程作业/比赛物料均可）有助于互选。"
+          "常見工作：隊徽與主視覺延展、海報與手冊、數據信息圖、PPT/答辯視覺、短視頻或動效（視當年分工而定）。",
+          "希望你：熟練使用 PS / AI / ID 等之一，有版式與配色基礎；會 PR/AE/Blender 等其一為加分項。",
+          "需能按 Wiki 與答辯截稿迭代，接受多輪修改；作品集（課程作業/比賽物料均可）有助於互選。"
         ]
       }
     },
     "commonExpect": [
-      "认同团队目标，能参加例会与组内分工，赛期（尤其暑期至赛前）保持较高投入。",
-      "诚实沟通进度与困难；尊重实验室安全、伦理与学校规章制度。",
-      "英语：至少能阅读 Wiki 与文献片段；口语与答辩能力会在备赛过程中集体训练。",
-      "不限年级：许多队伍欢迎低年级同学从基础岗位做起，以学习与传承为主。"
+      "認同團隊目標，能參加例會與組內分工，賽期（尤其暑期至賽前）保持較高投入。",
+      "誠實溝通進度與困難；尊重實驗室安全、倫理與學校規章制度。",
+      "英語：至少能閲讀 Wiki 與文獻片段；口語與答辯能力會在備賽過程中集體訓練。",
+      "不限年級：許多隊伍歡迎低年級同學從基礎崗位做起，以學習與傳承為主。"
     ]
   },
   "labs": {
     "heroKicker": "Laboratory & Research",
     "galleryTitle": "影像掠影",
-    "galleryIntro": "下列图片均来自 iGEM Wiki 静态资源；以 {wiki} 为准。",
+    "galleryIntro": "下列圖片均來自 iGEM Wiki 靜態資源；以 {wiki} 為準。",
     "wikiOfficial": "官方 Wiki",
-    "viewSource": "查看来源",
-    "footNote": "如需增删图片，可编辑 {file} 中的静态站地址（须与 Wiki 一致）。",
+    "viewSource": "查看來源",
+    "footNote": "如需增刪圖片，可編輯 {file} 中的靜態站地址（須與 Wiki 一致）。",
     "kindLabel": {
       "igem": "iGEM Wiki"
     }
   },
   "labIntro": {
-    "title": "沈阳药科大学 · 实验与科研环境",
-    "lead": "沈阳药科大学拥有药学国家级实验教学示范中心（2001 年成立，2007 年获批国家级），下设多个实验教学分中心，为 SYPHU-China iGEM 等创新团队提供湿实验与交叉学科支撑。",
-    "centerLabel": "药学国家级实验教学示范中心官网"
+    "title": "瀋陽藥科大學 · 實驗與科研環境",
+    "lead": "瀋陽藥科大學擁有藥學國家級實驗教學示範中心（2001 年成立，2007 年獲批國家級），下設多個實驗教學分中心，為 SYPHU-China iGEM 等創新團隊提供濕實驗與交叉學科支撐。",
+    "centerLabel": "藥學國家級實驗教學示範中心官網"
   },
   "labGallery": {
     "igem-edu-platform": {
-      "title": "实验教学平台（iGEM Wiki 素材）",
-      "caption": "SYPHU-China 2025 项目记载的实验教学与平台展示。"
+      "title": "實驗教學平台（iGEM Wiki 素材）",
+      "caption": "SYPHU-China 2025 項目記載的實驗教學與平台展示。"
     },
     "igem-cell": {
-      "title": "细胞与药学主题视觉",
-      "caption": "2025 团队 Wiki 首页科研相关配图。"
+      "title": "細胞與藥學主題視覺",
+      "caption": "2025 團隊 Wiki 首頁科研相關配圖。"
     },
     "igem-exp1": {
-      "title": "实验记录掠影 ①",
-      "caption": "SYPHU-China 2024 iGEM 项目实验部分公开素材。"
+      "title": "實驗記錄掠影 ①",
+      "caption": "SYPHU-China 2024 iGEM 項目實驗部分公開素材。"
     },
     "igem-exp2": {
-      "title": "实验记录掠影 ②",
-      "caption": "2024 湿实验相关图示与场景。"
+      "title": "實驗記錄掠影 ②",
+      "caption": "2024 濕實驗相關圖示與場景。"
     },
     "igem-exp3": {
-      "title": "实验记录掠影 ③",
-      "caption": "团队实验流程与结果展示（Wiki）。"
+      "title": "實驗記錄掠影 ③",
+      "caption": "團隊實驗流程與結果展示（Wiki）。"
     },
     "igem-lab-safety": {
-      "title": "实验室安全与场景",
-      "caption": "2024 Wiki 安全与实验室环境相关配图。"
+      "title": "實驗室安全與場景",
+      "caption": "2024 Wiki 安全與實驗室環境相關配圖。"
     },
     "igem-results": {
-      "title": "实验成果展示",
-      "caption": "2024 项目结果页面公开图片。"
+      "title": "實驗成果展示",
+      "caption": "2024 項目結果頁面公開圖片。"
     }
   },
   "partnership": {
     "heroKicker": "Collaboration · Sponsorship",
     "heroTitle": "與全球同行對話，讓合成生物學走得更遠",
-    "heroLead": "SYPHU-China 欢迎国内外高校 iGEM 团队与组织交流互访、线上研讨与联合科普；我们也期待与生物医药、合成生物及相关领域企业建立合作，把课堂与实验室里的想法带到真实世界。",
-    "contactCta": "联系合作",
-    "inviteTitle": "面向全球 iGEM 社区的邀请",
-    "inviteP1": "iGEM 的价值在于开放协作与知识共享。我们渴望与各大洲的参赛团队建立长期联系：分享湿实验与干实验经验、Human Practices 与科普实践、Wiki 与答辩准备心得，以及在规则与伦理框架下的跨校联合活动等。",
-    "inviteP2": "若贵队希望开展校际交流、Guest Speaker、联合 outreach 或赛前友好互评，请通过页面底部表单与我们联系，并注明学校/团队名称与期望的协作形式。",
-    "whereTitle": "我们在哪里",
-    "addrShenyangTitle": "沈阳校区（校本部）",
-    "addrShenyang": "辽宁省沈阳市沈河区文化路 103 号",
-    "zipLabel": "邮编",
+    "heroLead": "SYPHU-China 歡迎國內外高校 iGEM 團隊與組織交流互訪、線上研討與聯合科普；我們也期待與生物醫藥、合成生物及相關領域企業建立合作，把課堂與實驗室裏的想法帶到真實世界。",
+    "contactCta": "聯繫合作",
+    "inviteTitle": "面向全球 iGEM 社區的邀請",
+    "inviteP1": "iGEM 的價值在於開放協作與知識共享。我們渴望與各大洲的參賽團隊建立長期聯繫：分享濕實驗與幹實驗經驗、Human Practices 與科普實踐、Wiki 與答辯準備心得，以及在規則與倫理框架下的跨校聯合活動等。",
+    "inviteP2": "若貴隊希望開展校際交流、Guest Speaker、聯合 outreach 或賽前友好互評，請通過頁面底部表單與我們聯繫，並註明學校/團隊名稱與期望的協作形式。",
+    "whereTitle": "我們在哪裏",
+    "addrShenyangTitle": "瀋陽校區（校本部）",
+    "addrShenyang": "遼寧省瀋陽市瀋河區文化路 103 號",
+    "zipLabel": "郵編",
     "zipShenyang": "110016",
-    "addrBenxiTitle": "本溪校区（南校区）",
-    "addrBenxi": "辽宁省本溪市高新技术产业开发区华佗大街 26 号 · 邮编 117004（学校另设南校区；团队日常以学院安排为准）。",
-    "mapLink": "在 OpenStreetMap 中打开主校区附近地图",
+    "addrBenxiTitle": "本溪校區（南校區）",
+    "addrBenxi": "遼寧省本溪市高新技術產業開發區華佗大街 26 號 · 郵編 117004（學校另設南校區；團隊日常以學院安排為準）。",
+    "mapLink": "在 OpenStreetMap 中打開主校區附近地圖",
     "campusNewsTitle": "沈藥掠影與校園動態",
     "newsKickerMedEd": "醫教協同",
     "newsKickerIntl": "國際交流",
@@ -251,7 +277,7 @@
     "featuredNews": {
       "hospitals": {
         "title": "與 26 家高水平醫院共建教學醫院",
-        "line": "瀋陽主校區簽約揭牌，拓展臨床教學與醫教協同。"
+        "line": "瀋陽主校區簽約揭牌，拓展臨牀教學與醫教協同。"
       },
       "belgium": {
         "title": "比利時駐華機構來溪考察 · 抗衰老合作",
@@ -275,55 +301,55 @@
         "line": "東南大學、江蘇省人民醫院、瀋陽藥科大學、美國哥倫比亞大學等聯合主辦；美、日、德、瑞等多國專家與會。"
       }
     },
-    "readFull": "閱讀原文 →",
+    "readFull": "閲讀原文 →",
     "sponsorTitle": "贊助與產業合作",
-    "sponsorLead": "合成生物学正在从论文走向产品。我们期待与生物制药、合成生物、诊断与实验室技术、绿色制造等领域企业展开合作：可为项目提供实验耗材与表征支持、数据与场景验证、科普与品牌共创，以及在合规与伦理审查框架下的联合曝光。",
+    "sponsorLead": "合成生物學正在從論文走向產品。我們期待與生物製藥、合成生物、診斷與實驗室技術、綠色製造等領域企業展開合作：可為項目提供實驗耗材與表徵支持、數據與場景驗證、科普與品牌共創，以及在合規與倫理審查框架下的聯合曝光。",
     "igemKicker": "iGEM",
-    "valuesTitle": "理念与价值",
-    "philosophy1": "开放与共享：标准 DNA 元件（Registry）、团队互助与全球社区，是 iGEM 的底色。",
-    "philosophy2": "安全与责任：从实验室到公众，强调生物安全、伦理与负责任的创新。",
-    "philosophy3": "Human Practices：项目扎根真实世界，关注社会、法律、教育与利益相关方。",
-    "philosophy4": "从研究到影响：高质量 Wiki、可复现实验，以及面向真实需求的转化与创业探索（含竞赛中的 Entrepreneurship 等相关方向）。",
-    "competitionNote": "更多定义与规则以 competition.igem.org 与当年赛程为准。",
-    "startupsLead": "以下配图选自 startups.igem.org 使用的官方静态资源，突出全球校友初创规模与地理分布。",
-    "openStartups": "打开 iGEM Startups 官网",
-    "startupsHeadline": "350+ 初创企业，覆盖 50+ 国家与地区",
-    "startupsBlurb": "iGEM Startups 将竞赛中的创新项目与创业辅导、社群与资源对接起来；官网用下图概括全球校友初创企业的规模与分布趋势。",
-    "mapLabel": "校友初创企业分布",
-    "mapCaption": "动图示意全球校友初创企业地理分布，与 iGEM Startups 叙事一致。",
-    "mapTech": "资源路径：",
-    "mapSlow": "（动图体积较大，首次加载可能稍慢。）",
-    "timelineLabel": "iGEM Startups 时间线",
-    "spotlightHeading": "官网首页展示的初创案例（节选）",
-    "coop1t": "科研与实验",
-    "coop1d": "菌株与实验设计、分析检测、安全与质量控制等方向的对接与讨论。",
-    "coop2t": "品牌与传播",
-    "coop2d": "Wiki、答辩、开放日与社交媒体的致谢与联合传播（遵守 iGEM 规则与学校规定）。",
-    "coop3t": "长期关系",
-    "coop3d": "欢迎与团队建立持续 mentorship 与人才交流，具体权益以书面协议与当年赛程为准。",
-    "contactSectionTitle": "联系合作",
-    "placeholderOrg": "学校 / iGEM 团队名 / 企业名称（选填）",
-    "placeholderMsgP": "合作意向、时间段与希望对接的方向",
+    "valuesTitle": "理念與價值",
+    "philosophy1": "開放與共享：標準 DNA 元件（Registry）、團隊互助與全球社區，是 iGEM 的底色。",
+    "philosophy2": "安全與責任：從實驗室到公眾，強調生物安全、倫理與負責任的創新。",
+    "philosophy3": "Human Practices：項目紮根真實世界，關注社會、法律、教育與利益相關方。",
+    "philosophy4": "從研究到影響：高質量 Wiki、可復現實驗，以及面向真實需求的轉化與創業探索（含競賽中的 Entrepreneurship 等相關方向）。",
+    "competitionNote": "更多定義與規則以 competition.igem.org 與當年賽程為準。",
+    "startupsLead": "以下配圖選自 startups.igem.org 使用的官方靜態資源，突出全球校友初創規模與地理分佈。",
+    "openStartups": "打開 iGEM Startups 官網",
+    "startupsHeadline": "350+ 初創企業，覆蓋 50+ 國家與地區",
+    "startupsBlurb": "iGEM Startups 將競賽中的創新項目與創業輔導、社羣與資源對接起來；官網用下圖概括全球校友初創企業的規模與分佈趨勢。",
+    "mapLabel": "校友初創企業分佈",
+    "mapCaption": "動圖示意全球校友初創企業地理分佈，與 iGEM Startups 敍事一致。",
+    "mapTech": "資源路徑：",
+    "mapSlow": "（動圖體積較大，首次加載可能稍慢。）",
+    "timelineLabel": "iGEM Startups 時間線",
+    "spotlightHeading": "官網首頁展示的初創案例（節選）",
+    "coop1t": "科研與實驗",
+    "coop1d": "菌株與實驗設計、分析檢測、安全與質量控制等方向的對接與討論。",
+    "coop2t": "品牌與傳播",
+    "coop2d": "Wiki、答辯、開放日與社交媒體的致謝與聯合傳播（遵守 iGEM 規則與學校規定）。",
+    "coop3t": "長期關係",
+    "coop3d": "歡迎與團隊建立持續 mentorship 與人才交流，具體權益以書面協議與當年賽程為準。",
+    "contactSectionTitle": "聯繫合作",
+    "placeholderOrg": "學校 / iGEM 團隊名 / 企業名稱（選填）",
+    "placeholderMsgP": "合作意向、時間段與希望對接的方向",
     "formSubjectMail": "[SYPHU-China iGEM] 交流 / 贊助合作諮詢"
   },
   "form": {
     "submit": "提交",
     "submitting": "發送中…",
-    "successRecruit": "提交成功！请留意邮箱回复，欢迎说明意向组别（湿实验/干实验/HP/Wiki/美工等）。",
-    "successContact": "提交成功，我们已收到您的留言，会尽快通过邮箱与您联系。",
-    "successPartnership": "提交成功！我们会尽快通过邮箱与您联系，也欢迎抄送团队公共邮箱（如有）。",
-    "fail": "发送失败，请稍后重试。",
-    "network": "网络异常，请检查网络后重试。",
-    "envHintRecruit": "表单需在项目根目录配置 .env 中的 VITE_WEB3FORMS_ACCESS_KEY。",
-    "envHintTeam": "留言功能需在项目根目录创建 .env，设置 VITE_WEB3FORMS_ACCESS_KEY（在 web3forms.com 用您的邮箱免费获取）。",
-    "envHintPartnership": "表单需在项目根目录配置 .env 中的 VITE_WEB3FORMS_ACCESS_KEY。",
+    "successRecruit": "提交成功！請留意郵箱回覆，歡迎説明意向組別（濕實驗/幹實驗/HP/Wiki/美工等）。",
+    "successContact": "提交成功，我們已收到您的留言，會盡快通過郵箱與您聯繫。",
+    "successPartnership": "提交成功！我們會盡快通過郵箱與您聯繫，也歡迎抄送團隊公共郵箱（如有）。",
+    "fail": "發送失敗，請稍後重試。",
+    "network": "網絡異常，請檢查網絡後重試。",
+    "envHintRecruit": "表單需在項目根目錄配置 .env 中的 VITE_WEB3FORMS_ACCESS_KEY。",
+    "envHintTeam": "留言功能需在項目根目錄創建 .env，設置 VITE_WEB3FORMS_ACCESS_KEY（在 web3forms.com 用您的郵箱免費獲取）。",
+    "envHintPartnership": "表單需在項目根目錄配置 .env 中的 VITE_WEB3FORMS_ACCESS_KEY。",
     "orgLinePrefix": "單位/團隊："
   },
   "teamPi": {
-    "name": "倪现朴 教授",
-    "titles": "生物技术与生物制药教研室主任 · 硕士生导师",
-    "affiliation": "沈阳药科大学 生命科学与生物制药学院",
-    "research": "倪现朴教授长期从事微生物药物代谢工程、微生物药物生物合成途径与机制、以及活体微生物药物的合成生物学等方向的研究；主持国家自然科学基金、辽宁省自然科学基金面上项目、辽宁省教育厅重点攻关项目等课题，在 Applied Microbiology and Biotechnology、Microbial Cell Factories 等期刊发表多篇论文，入选辽宁省“百千万人才”工程培养人选等人才计划。",
-    "igemSupport": "倪老师始终关心并推动沈阳药科大学 iGEM 参赛与合成生物学人才培养工作，在校内牵头组织与支持相关事务，鼓励沈药学子走上国际赛事舞台，与来自全球的优秀青年团队同台交流、同台竞技，在实践中历练科研与创新能力。"
+    "name": "倪現樸 教授",
+    "titles": "生物技術與生物製藥教研室主任 · 碩士生導師",
+    "affiliation": "瀋陽藥科大學 生命科學與生物製藥學院",
+    "research": "倪現樸教授長期從事微生物藥物代謝工程、微生物藥物生物合成途徑與機制、以及活體微生物藥物的合成生物學等方向的研究；主持國家自然科學基金、遼寧省自然科學基金面上項目、遼寧省教育廳重點攻關項目等課題，在 Applied Microbiology and Biotechnology、Microbial Cell Factories 等期刊發表多篇論文，入選遼寧省“百千萬人才”工程培養人選等人才計劃。",
+    "igemSupport": "倪老師始終關心並推動瀋陽藥科大學 iGEM 參賽與合成生物學人才培養工作，在校內牽頭組織與支持相關事務，鼓勵沈藥學子走上國際賽事舞台，與來自全球的優秀青年團隊同台交流、同台競技，在實踐中歷練科研與創新能力。"
   }
 }

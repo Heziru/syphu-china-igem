@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "i18n:check": "node scripts/i18n-check.mjs",
     "i18n:merge-recruit": "node scripts/i18n-merge-recruit.mjs",
-    "i18n:translate": "python scripts/translate_locales.py"
+    "i18n:translate": "python scripts/translate_locales.py",
+    "i18n:opencc": "python scripts/opencc_locales.py"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.2",

@@ -90,7 +90,7 @@
     "piHeading": "指导教师",
     "rosterTitle": "历届参赛成员",
     "rosterIntroBefore": "以下信息整理自",
-    "rosterIntroAfter": "页面；简介为便于阅读做了缩写，完整英文自述以 Wiki 为准。",
+    "rosterIntroAfter": "页面；成员简介与当前语言一致，为便于阅读做了缩写，完整内容以 Wiki 为准。",
     "workTitle": "我们的工作",
     "workResearch": "我们的研究",
     "workResearchDesc": "展示团队在合成生物学、基因工程、微生物学等方面的前沿研究成果。",
@@ -101,7 +101,33 @@
     "contactFormSubject": "[SYPHU-China iGEM] 官网联系表单",
     "seasonLabel": "赛季",
     "wiki2024Link": "2024 iGEM Wiki — Team page",
-    "piPhotoAlt": "倪现朴教授"
+    "piPhotoAlt": "倪现朴教授",
+    "roster2024SourceNote": "成员照片与分工与 iGEM Wiki 静态资源及 GitLab 源码一致；简介为便于阅读做了缩写，完整内容见团队页。",
+    "logo2024Alt": "SYPHU-China iGEM 2024 团队标识",
+    "rosterSubsection": {
+      "teamLeader": "队长",
+      "studentLeaders": "学生负责人",
+      "students": "队员",
+      "advisors": "指导老师",
+      "pi": "PI"
+    },
+    "roles": {
+      "teamLeader": "队长",
+      "leader": "领队",
+      "dryLab": "干实验",
+      "wetLab": "湿实验",
+      "hp": "Human Practices",
+      "hpLeader": "HP 负责人",
+      "wetLabLeader": "湿实验负责人",
+      "dryLabLeader": "干实验负责人",
+      "wikiLeader": "Wiki 负责人",
+      "wiki": "Wiki",
+      "artDesign": "美工",
+      "artDesignLeader": "美工负责人",
+      "advisor": "指导老师",
+      "formerLeader": "往届队长",
+      "pi": "PI"
+    }
   },
   "recruit": {
     "heroKicker": "Recruitment",

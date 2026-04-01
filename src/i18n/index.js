@@ -4,6 +4,11 @@ import zhHK from '../locales/zh-HK.json'
 import zhTW from '../locales/zh-TW.json'
 import en from '../locales/en.json'
 import fr from '../locales/fr.json'
+import teamRosterBioZhCN from '../locales/partials/teamRoster.bio.zh-CN.json'
+import teamRosterBioEn from '../locales/partials/teamRoster.bio.en.json'
+import teamRosterBioFr from '../locales/partials/teamRoster.bio.fr.json'
+import teamRosterBioZhTW from '../locales/partials/teamRoster.bio.zh-TW.json'
+import teamRosterBioZhHK from '../locales/partials/teamRoster.bio.zh-HK.json'
 
 const STORAGE_KEY = 'syphu-locale'
 
@@ -14,16 +19,23 @@ function getInitialLocale() {
   return 'zh-CN'
 }
 
+function withTeamRoster(base, bioMap) {
+  return {
+    ...base,
+    teamRoster: { bio: bioMap },
+  }
+}
+
 export const i18n = createI18n({
   legacy: false,
   locale: getInitialLocale(),
   fallbackLocale: 'zh-CN',
   messages: {
-    'zh-CN': zhCN,
-    'zh-HK': zhHK,
-    'zh-TW': zhTW,
-    en,
-    fr,
+    'zh-CN': withTeamRoster(zhCN, teamRosterBioZhCN),
+    'zh-HK': withTeamRoster(zhHK, teamRosterBioZhHK),
+    'zh-TW': withTeamRoster(zhTW, teamRosterBioZhTW),
+    en: withTeamRoster(en, teamRosterBioEn),
+    fr: withTeamRoster(fr, teamRosterBioFr),
   },
   globalInjection: true,
 })

@@ -90,7 +90,7 @@
     "piHeading": "Faculty advisor",
     "rosterTitle": "Past team members",
     "rosterIntroBefore": "Compiled from",
-    "rosterIntroAfter": "; bios are shortened for readability. Full English statements are on the Wiki.",
+    "rosterIntroAfter": "; member bios match the site language (shortened). Full details are on the Wiki.",
     "workTitle": "Our work",
     "workResearch": "Our research",
     "workResearchDesc": "Frontier work in synthetic biology, genetic engineering, and microbiology.",
@@ -101,7 +101,33 @@
     "contactFormSubject": "[SYPHU-China iGEM] Website contact form",
     "seasonLabel": "season",
     "wiki2024Link": "2024 iGEM Wiki — Team page",
-    "piPhotoAlt": "Prof. Ni Xianpu"
+    "piPhotoAlt": "Prof. Ni Xianpu",
+    "roster2024SourceNote": "Photos and roles match iGEM Wiki assets and the GitLab source; bios are shortened—see the team page for full text.",
+    "logo2024Alt": "SYPHU-China iGEM 2024 team logo",
+    "rosterSubsection": {
+      "teamLeader": "Team leader",
+      "studentLeaders": "Student leads",
+      "students": "Students",
+      "advisors": "Advisors",
+      "pi": "PI"
+    },
+    "roles": {
+      "teamLeader": "Team leader",
+      "leader": "Lead",
+      "dryLab": "Dry lab",
+      "wetLab": "Wet lab",
+      "hp": "Human Practices",
+      "hpLeader": "HP lead",
+      "wetLabLeader": "Wet lab lead",
+      "dryLabLeader": "Dry lab lead",
+      "wikiLeader": "Wiki lead",
+      "wiki": "Wiki",
+      "artDesign": "Art & design",
+      "artDesignLeader": "Art & design lead",
+      "advisor": "Advisor",
+      "formerLeader": "Former team leader",
+      "pi": "PI"
+    }
   },
   "recruit": {
     "heroKicker": "Recruitment",

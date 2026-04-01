@@ -1,3 +1,4 @@
-# 可选：本地批量机翻 locale JSON（见 scripts/translate_locales.py）
+# 可选：本地处理 locale JSON
 # pip install -r requirements-i18n.txt
 translators>=5.9,<6
+opencc-python-reimplemented>=0.1.7
